@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Course Catalogue</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <style>
+ 
+body{
+    background-color: rgb(206, 212, 212);
+  }
+  
+      nav :hover{
+        color: blue;
+      } 
+.product-catalog {
+    max-width: 100%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.product-catalog h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+    color: black;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover .product-image {
+    transform: scale(1.1);
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    color: #666;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%;
+    }
+}
+
+/* Your existing styles remain unchanged */
+
+.product-item:nth-child(odd) {
+    background-color: #f9f9f9;
+    /* Alternate background color for odd items */
+}
+
+ </style>
+</head>
+<body>
+  <!-- Header navbar -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">Skill Safari</a>
+</div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="Home.html">Home</a></li>
+<li><a href="About-us.html">About Us</a></li>
+<li><a href="course_catalogue.html">Course Catalog</a></li>
+<li><a href="Programming.html"> Programming </a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="FAQs.html">FAQs</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="Singup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<li><a href="login-form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
+</div>
+</nav>                                             <!-- Course Catalog  -->
+  <div class="product-catalog">
+    <h2>Courses Catalog</h2>
+    <div class="product">
+      <!-- Product 1 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('word\ pre.png');"></div>
+        <div class="product-details">
+          <div class="product-title">WordPress</div>
+          <div class="product-description">WordPress is a versatile and user-friendly content management system (CMS) powering millions of websites worldwide. With its intuitive interface and extensive range of plugins and themes, WordPress empowers users to create stunning websites with ease. Whether you're a blogger, entrepreneur, or developer
+          </div>
+        </div>
+      </a>
+      <!-- Product 2 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('javascript.jpeg');"></div>
+        <div class="product-details">
+          <div class="product-title">JavaScript</div>
+          <div class="product-description">The dynamic scripting language that adds interactivity and functionality to web pages, enhancing user experience and enabling dynamic content updates. With its versatility and widespread adoption, JavaScript plays a crucial role in modern web development, powering interactive features and responsive design across the internet.</div>
+        </div>
+      </a>
+      <!-- Product 3 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('html.jpeg');"></div>
+        <div class="product-details">
+          <div class="product-title">Html & Css</div>
+          <div class="product-description">HTML and CSS work in tandem: HTML provides the structure and content of a webpage, while CSS defines its style and appearance. Together, they form the backbone of web design, allowing for the creation of visually stunning and responsive websites that captivate audiences worldwide.</div>
+        </div>
+      </a>
+      <!-- Product 4 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('python.png');"></div>
+        <div class="product-details">
+          <div class="product-title">Python</div>
+          <div class="product-description">A versatile and powerful programming language known for its simplicity and readability, making it ideal for a wide range of applications, from web development and data analysis to artificial intelligence and scientific computing. With its extensive libraries and active community support.</div>
+        </div>
+      </a>
+      <!-- Product 5 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('java.png');"></div>
+        <div class="product-details">
+          <div class="product-title">Java</div>
+          <div class="product-description">A robust, object-oriented programming language favored for its platform independence, scalability, and security features. Widely used in enterprise-level applications, Android app development, and large-scale systems, Java remains a cornerstone in the software development industry, powering countless mission.</div>
+        </div>
+      </a>
+      <!-- Product 6 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('php.jpeg');"></div>
+        <div class="product-details">
+          <div class="product-title">PHP</div>
+          <div class="product-description">GA versatile server-side scripting language, PHP enables dynamic and interactive web development, powering a myriad of websites and web applications worldwide. Its simplicity, scalability, and extensive community support make it a go-to choice for developers aiming to create robust and feature-rich online experiences.</div>
+        </div>
+      </a>
+      <!-- Product 7 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('react.jpeg');"></div>
+        <div class="product-details">
+          <div class="product-title">AngularJS and React</div>
+          <div class="product-description"> Leading front-end frameworks renowned for their efficiency and flexibility in building dynamic web applications. While AngularJS offers a comprehensive solution with its MVC architecture, React excels in creating interactive user interfaces with its component-based approach. Both frameworks empower developers to craft modern.</div>
+        </div>
+      </a>
+      <!-- Product 8 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/amazon_vitual_ass.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">Abc</div>
+          <div class="product-description">Explore refrigeration and ai</div>
+        </div>
+      </a>
+      <!-- Product 9 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/computer_appplications.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">Computer Applications </div>
+          <div class="product-description">Explore refrigeration and air</div>
+        </div>
+      </a>
+      <!-- Product 10 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/digital_marketiing.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">Digital Marketing</div>
+          <div class="product-description">Explore refrigeration and air conditioning systems, learning maintenance,
+            troubleshooting, and repair skills.</div>
+        </div>
+      </a>
+      <!-- Product 11 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/fashion_desgin&Dress_making.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">FAshion Desging & Dress Making</div>
+          <div class="product-description">Explore refrigeration and air conditioning systems, learning maintenance,
+            troubleshooting, and repair skills.</div>
+        </div>
+      </a>
+      <!-- Product 12 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/graphic_design.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">Graphic Desgin</div>
+          <div class="product-description">Explore refrigeration and air conditioning systems, learning maintenance,
+            troubleshooting, and repair skills.</div>
+        </div>
+      </a>
+      <!-- Product 13 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/web_desging&development.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">Web Desgin & Development</div>
+          <div class="product-description">Explore refrigeration and air conditioning systems, learning maintenance,
+            troubleshooting, and repair skills.</div>
+        </div>
+      </a>
+      <!-- Product 14 -->
+      <a class="product-item" href="#">
+        <div class="product-image" style="background-image: url('../images/social_media.jpg');"></div>
+        <div class="product-details">
+          <div class="product-title">Social Media</div>
+          <div class="product-description">Explore refrigeration and air conditioning systems, learning maintenance,
+            troubleshooting, and repair skills.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer>
+  <div class="footer_main">
+    <div class="footer-top">
+      <div class="footer-section">
+        <img src="logo-.png" alt="" height="200px" width="200px">
+        <p>
+          Discover a world of knowledge with our diverse range of online courses. From programming to data science, we offer interactive learning experiences tailored to every skill level.
+        </p>
+        
+      </div>
+
+      <div class="footer-section">
+        <h3 style="color: rgb(192, 141, 14); margin-left: 5%;">Get in Touch</h3>
+        
+          <a href="#" target="_blank" style="margin-right: 20px; margin-left: 3%; font-size: 16px;"><img src="fb-png.png" alt="" height="35px" width="35px">  Facebook</a>
+          <a href="#" target="_blank" style=" font-size: 16px;"><img src="insta-png.png" alt="" height="45px" width="45px"> Instagram</a> <br>
+          <a href="#" target="_blank" style="margin-right: 50px; font-size: 16px;"><img src="x_icon-png.png" alt="" height="55px" width="55px"> X </a>
+          <a href="#" target="_blank" style="margin-right: 50px; margin-left: 7%; font-size: 16px;"><img src="linkedin_icon.png" alt="" height="32px" width="32px"> Linkedin </a>
+      </div>
+
+      <div class="footer-section">
+        <h3 style="color: rgb(192, 141, 14); margin-left: 2%;">Important Links</h3>
+        <a href="#" style="width: 20%; padding: 15px; background-color: none;  color: white;">
+          All Courses <span class="glyphicon glyphicon-share-alt"></span></a> <br>
+          <a href="#" style="width: 20%; padding: 15px; background-color: none;   color: white; ">
+            Course for College Student <span class="glyphicon glyphicon-share-alt"></span></a><br>
+            <a href="#" style="width: 20%; padding: 15px; background-color: none; color: white; ">
+             Online Training<span class="glyphicon glyphicon-share-alt"></span></a><br>
+      </div>
+    </div>
+
+    <div class="footer-last" style="text-align: right">
+      <p style="color: rgb(192, 141, 14);"><br />&copy; 2024 Skill Safari. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<style>
+  footer {
+        background: rgb(14, 14, 14);
+        padding: 50px 0;
+      }
+      .footer_main {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+
+      .footer-section {
+        width: 40%;
+      }
+
+      .footer-section h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .footer-section p {
+        color: whitesmoke;
+        line-height: 1.5;
+      }
+
+      .footer-section a {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+.social{
+  margin-left: 8%;
+}
+      .footer-last{
+        margin-right: 40%;
+      }
+</style>
+</html>

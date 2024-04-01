@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(206, 212, 212);
+}
+
+    nav :hover{
+      color: blue;
+    }
+    .contact-info {
+        margin-top: 20px;
+        box-shadow: 2px 2px 2px 2px grey;
+        background-color: whitesmoke;
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .contact-info i {
+       margin-left: 10%;
+    }
+    
